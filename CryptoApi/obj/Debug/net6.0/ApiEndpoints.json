@@ -1,0 +1,98 @@
+[
+  {
+    "ContainingType": "CryptoApi.Controllers.CryptoCoinGeckoApiController",
+    "Method": "GetCryptosApi",
+    "RelativePath": "api/CryptoCoinGeckoApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoApi.Controllers.CryptoCoinGeckoApiController",
+    "Method": "GetCryptoDetailsDto",
+    "RelativePath": "api/CryptoCoinGeckoApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoApi.Controllers.FavoriteCryptocurrenciesController",
+    "Method": "GetFavorites",
+    "RelativePath": "api/FavoriteCryptocurrencies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CryptoApi.Controllers.FavoriteCryptocurrenciesController",
+    "Method": "AddFavorite",
+    "RelativePath": "api/FavoriteCryptocurrencies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CryptoApi.Domain.Models.Request.AddFavoriteCryptocurrencies",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "CryptoApi.Controllers.FavoriteCryptocurrenciesController",
+    "Method": "DeleteFavorite",
+    "RelativePath": "api/FavoriteCryptocurrencies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ]
+  }
+]
